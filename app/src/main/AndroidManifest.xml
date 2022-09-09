@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exam.vn.bookmanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.exam.vn.bookmanager.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.exam.vn.bookmanager.LoginActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.NguoiDungActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.ListNguoiDungActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.TheLoaiActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.ListTheLoaiActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.ThemSachActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.ListBookActivity" />
+        <activity android:name="com.exam.vn.bookmanager.HoaDonActivity" />
+        <activity android:name=".MainActivity" >
+        </activity>
+
+        <activity
+            android:name="com.exam.vn.bookmanager.ListNguoiDungActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity android:name="com.exam.vn.bookmanager.NguoiDungDetailActivity" />
+        <activity android:name="com.exam.vn.bookmanager.ChangePasswordActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.ListBookActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.ListTheLoaiActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity
+            android:name="com.exam.vn.bookmanager.HoaDonChiTietActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.HoaDonActivity" />
+
+        <activity android:name="com.exam.vn.bookmanager.ListHoaDonActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity android:name="com.exam.vn.bookmanager.ListHoaDonChiTietByIDActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity android:name="com.exam.vn.bookmanager.LuotSachBanChayActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+        <activity android:name="com.exam.vn.bookmanager.ThongKeDoanhThuActivity"
+            android:parentActivityName="com.exam.vn.bookmanager.MainActivity" />
+    </application>
+
+</manifest>
